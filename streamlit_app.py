@@ -2,17 +2,18 @@
 SupplyChainOS — Streamlit dashboard.
 
 Run: streamlit run streamlit_app.py
-Requires the FastAPI server to be running at http://localhost:8000
+Requires the FastAPI server to be running.
 """
 from __future__ import annotations
 
+import os
 import time
 from datetime import datetime
 
 import httpx
 import streamlit as st
 
-API = "http://localhost:8000/api/v1"
+API = os.environ.get("API_URL", "http://localhost:8000").rstrip("/") + "/api/v1"
 
 st.set_page_config(
     page_title="SupplyChainOS",
