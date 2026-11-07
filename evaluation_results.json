@@ -1,0 +1,56 @@
+[
+  {
+    "outcome": "COMPLETED",
+    "plan_feasible": true,
+    "total_cost": 19935.0,
+    "line_items": 5,
+    "violations": 0,
+    "elapsed_s": 11.573,
+    "scenario": "S1_normal_replenishment",
+    "error": null
+  },
+  {
+    "outcome": "NO_ACTION_NEEDED",
+    "plan_feasible": true,
+    "line_items": 0,
+    "violations": 0,
+    "elapsed_s": 0.04,
+    "scenario": "S2_no_shortage",
+    "error": null
+  },
+  {
+    "outcome": "INFEASIBLE",
+    "plan_feasible": false,
+    "violations": 5,
+    "total_cost": 0.0,
+    "elapsed_s": 24.01,
+    "scenario": "S3_budget_violation",
+    "error": null
+  },
+  {
+    "outcome": "INFEASIBLE",
+    "plan_feasible": false,
+    "violations": 5,
+    "elapsed_s": 24.441,
+    "scenario": "S4_deadline_violation",
+    "error": null
+  },
+  {
+    "outcome": "COMPLETED",
+    "recovery_attempted": false,
+    "plan_feasible": true,
+    "violations": 0,
+    "elapsed_s": 33.494,
+    "scenario": "S5_supplier_failure_recovery",
+    "error": null
+  },
+  {
+    "outcome": "IDEMPOTENT",
+    "duplicate_blocked": true,
+    "plan_feasible": true,
+    "violations": 0,
+    "elapsed_s": 0.012,
+    "scenario": "S6_idempotency",
+    "error": null
+  }
+]

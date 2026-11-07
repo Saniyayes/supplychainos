@@ -1,0 +1,37 @@
+# SupplyChainOS dependencies — Python 3.13 compatible
+# Core framework
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+pydantic==2.10.3
+pydantic-settings==2.7.0
+
+# Database
+sqlmodel==0.0.22
+aiosqlite==0.20.0
+psycopg2-binary==2.9.13
+
+# LLM (Groq)
+groq==1.7.0
+
+# LangGraph / LangChain (agentic workflow)
+langgraph==0.2.56
+langchain-core==0.3.25
+
+# Optimization (OR-Tools)
+ortools==9.12.4544
+
+# Streamlit UI
+streamlit==1.41.1
+
+# HTTP client (for internal calls from streamlit)
+httpx==0.28.1
+
+# Testing
+pytest==8.3.4
+pytest-asyncio==0.24.0
+
+# Utilities
+python-dotenv==1.0.1
+structlog==24.4.0
+tenacity==9.0.0
+rich==13.9.4
